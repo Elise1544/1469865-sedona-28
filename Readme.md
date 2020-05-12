@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Елизавета Забродская](https://up.htmlacademy.ru/htmlcss/28/user/1469865).
-* Наставник: [Андрей Корейкин] (https://htmlacademy.ru/profile/ankormoreankor).
+* Наставник: [Андрей Корейкин](https://htmlacademy.ru/profile/ankormoreankor).
 
 ---
 
