@@ -22,12 +22,60 @@
 
 
     <main>
-      <h1>Поиск отелей</h1>
-      <h2>Фильтр поиска</h2>
-      <!--Здесь будет форма фильтра-->
-
-
-
+      <h1 class="visually-hidden">Поиск отелей</h1>
+      <h2 class="visually-hidden">Фильтр поиска</h2>
+      <form action="https://echo.htmlacademy.ru/courses" method="POST">
+        <fieldset name="infrastructure">
+          <legend>Инфраструктура</legend>
+            <input type="checkbox" name="pool" id="pool" checked>
+              <label for="pool">Бассейн</label>
+            <input type="checkbox" name="parking" id="parking">
+              <label for="parking">Парковка</label>
+            <input type="checkbox" name="wi-fi" id="wi-fi">
+              <label for="wi-fi">Wi-Fi</label>
+        </fieldset>
+        <fieldset name="housing">
+          <legend>Тип жилья</legend>
+            <input type="checkbox" name="hotel" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            <input type="checkbox" name="motel" id="motel" checked>
+              <label for="motel">Мотель</label>
+            <input type="checkbox" name="apartments" id="apartments" checked>
+              <label for="apartments">Апартаменты</label>
+        </fieldset>
+        <fieldset name="cost">
+          <legend>Стоимость в сутки (Р)</legend>
+            <input type="range" min="0">
+            <input type="range" max="3500">
+            <label class="visually-hidden">От 0
+              <button type="button">от 0</button>
+            </label>
+            <label class="visually-hidden">До 3000
+              <button type="button">До 3000</button>
+            </label>
+        </fieldset>
+        <button type="submit">Показать</button>
+        <section>
+          <h3>Найдено: 3</h3>
+          <fieldset>Сортировка
+            <label>
+              <input type="radio" name="sort" value="cost">По цене
+            </label>
+            <label>
+              <input type="radio" name="sort" value="type">По типу
+            </label>
+            <label>
+              <input type="radio" name="sort" value="rating">Рейтинг
+            </label>
+            <button type="button" name="up">
+              <img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
+            </button>
+            <button type="button" name="down">
+              <img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
+            </button>
+          </fieldset>
+        </section>
+      </form>
 
       <ul>
         <li>

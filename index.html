@@ -19,7 +19,7 @@
     </header>
 
     <main>
-      <h1>Седона</h1>
+      <h1 class="visually-hidden">Седона</h1>
       <img src="img/welcome.png" width="456" height="350" alt="Седона лучше, чем Гранд-Каньон">
 
       <section>
@@ -27,11 +27,43 @@
           заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p >
           <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <h3>Настоящий городок</h3>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <img src="img/№1.jpg" width="800" height="256" alt="Кафе на улице">
+              <section>
+                <img src="img/home.svg" width="75" height="72" alt="Дом">
+                <h4>Жильё</h4>
+                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </section>
+              <section>
+                <img src="img/food.svg" width="75" height="70" alt="Бургер">
+                <h4>Еда</h4>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </section>
+              <section>
+                <img src="img/souvenirs.svg" width="64" height="77" alt="Подарок">
+                <h4>Сувениры</h4>
+                <p>Не только китайского, но и местного производства!</p>
+              </section>
+            </li>
+            <li>
+              <h3>Там есть мост дьявола</h3>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <img src="img/№2.jpg" width="800" height="256" alt="Мост дьявола">
+            </li>
+            <li>
+              <h3>Небольшая прощадь</h3>
+              <p>Все достопримечательности находятся очень близко</p>
+            </li>
+            <li>
+              <h3>Красивая дорога</h3>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li>
+              <h3>Мало туристов</h3>
+              <p>Большинство едет в Гранд-Каньон и толпится там</p>
+            </li>
           </ol>
       </section>
 
@@ -39,15 +71,28 @@
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки, <br>
         и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button">Поиск гостиницы в Седоне</button>
-        <form>
-          <button></button>
-          <!--Здесь будет форма поиска-->
+        <button type="button" >Поиск гостиницы в Седоне</button>
+        <form action="https://echo.htmlacademy.ru/courses" method="POST">
+          <label>Дата заезда:
+            <input type="text" name="check-in-date" placeholder="24 апреля 2017">
+            <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
+          </label>
+          <br>
+          <label>Дата выезда:
+            <input type="text" name="check-out-date" placeholder="4 июля 2017">
+            <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
+          </label>
+          <br>
+          <label>Взрослые:
+            - <input type="text" name="adult" placeholder="2"> +
+          </label>
+          <label>Дети:
+            - <input type="text" name="children" placeholder="0"> +
+          </label>
+          <br>
           <button type="submit">Найти</button>
         </form>
       </section>
-
-
 
     </main>
 
