@@ -76,19 +76,23 @@
         <button type="button">Поиск гостиницы в Седоне</button>
         <form action="https://echo.htmlacademy.ru/" method="POST">
           <label>Дата заезда:
-            <input type="date" name="check-in-date">
+            <input type="text" name="check-in-date" placeholder="24 апреля 2017">
           </label>
+          <button type="button"><img src="img/calendar.svg" width="21" height="23" alt="Календарь"></button>
           <br>
           <label>Дата выезда:
-            <input type="date" name="check-out-date">
+            <input type="text" name="check-out-date" placeholder="4 июля 2017">
           </label>
+          <button type="button"><img src="img/calendar.svg" width="21" height="23" alt="Календарь"></button>
           <br>
-          <label>Взрослые:
-            <input type="number" name="adult" placeholder="2">
-          </label>
-          <label>Дети:
-            <input type="number" name="children" placeholder="0">
-          </label>
+          <label for="adult">Взрослые:</label>
+            <button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="Минус"></button>
+            <input type="number" name="adult" id="adult" placeholder="2">
+            <button type="button"><img src="img/plus.svg" width="11" height="11" alt="Плюс"></button>
+          <label for="children">Дети:</label>
+            <button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="Минус"></button>
+            <input type="number" name="children" id="children" placeholder="0">
+            <button type="button"><img src="img/plus.svg" width="11" height="11" alt="Плюс"></button>
           <br>
           <button type="submit">Найти</button>
         </form>
