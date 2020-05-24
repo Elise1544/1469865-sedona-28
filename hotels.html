@@ -13,7 +13,7 @@
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
-          <li><a>Гостиницы</a></li>
+          <li><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
 
@@ -22,60 +22,52 @@
 
 
     <main>
-      <h1 class="visually-hidden">Поиск отелей</h1>
-      <h2 class="visually-hidden">Фильтр поиска</h2>
-      <form action="https://echo.htmlacademy.ru/courses" method="GET">
-        <fieldset name="infrastructure">
-          <legend>Инфраструктура</legend>
-            <input type="checkbox" name="pool" id="pool" checked disabled>
-              <label for="pool">Бассейн</label>
-            <input type="checkbox" name="parking" id="parking">
-              <label for="parking">Парковка</label>
-            <input type="checkbox" name="wi-fi" id="wi-fi">
-              <label for="wi-fi">Wi-Fi</label>
-        </fieldset>
-        <fieldset name="housing">
-          <legend>Тип жилья</legend>
-            <input type="checkbox" name="hotel" id="hotel" checked disabled>
-              <label for="hotel">Гостиница</label>
-            <input type="checkbox" name="motel" id="motel" checked>
-              <label for="motel">Мотель</label>
-            <input type="checkbox" name="apartments" id="apartments" checked>
-              <label for="apartments">Апартаменты</label>
-        </fieldset>
-        <fieldset name="cost">
-          <legend>Стоимость в сутки (Р)</legend>
-            <input type="range" min="0">
-            <input type="range" max="3500">
-            <label class="visually-hidden">От 0
-              <button type="button">от 0</button>
-            </label>
-            <label class="visually-hidden">До 3000
-              <button type="button">До 3000</button>
-            </label>
-        </fieldset>
-        <button type="submit">Показать</button>
-        <section>
-          <h3>Найдено: 3</h3>
-          <fieldset>Сортировка
-            <label>
-              <input type="radio" name="sort" value="cost" disabled>По цене
-            </label>
-            <label>
-              <input type="radio" name="sort" value="type">По типу
-            </label>
-            <label>
-              <input type="radio" name="sort" value="rating">Рейтинг
-            </label>
-            <button type="button" name="up">
-              <img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
-            </button>
-            <button type="button" name="down">
-              <img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
-            </button>
+      <section>
+      <h1 class="visually-hidden">Фильтр поиска отелей</h1>
+        <form action="https://echo.htmlacademy.ru/" method="GET">
+          <fieldset name="infrastructure">
+            <legend>Инфраструктура</legend>
+              <input type="checkbox" name="pool" id="pool" checked disabled>
+                <label for="pool">Бассейн</label>
+              <input type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+              <input type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">Wi-Fi</label>
           </fieldset>
+          <fieldset name="housing">
+            <legend>Тип жилья</legend>
+              <input type="checkbox" name="hotel" id="hotel" checked disabled>
+                <label for="hotel">Гостиница</label>
+              <input type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">Мотель</label>
+              <input type="checkbox" name="apartments" id="apartments" checked>
+                <label for="apartments">Апартаменты</label>
+          </fieldset>
+          <div>
+            <p>Стоимость в сутки (Р)</p>
+              <label>От
+                <input type="number" name="from" min="0" max="3500" step="100" placeholder="0">
+              </label>
+              <label>До
+                <input type="number" name="to" min="0" max="3500" step="100" placeholder="3000">
+              </label>
+              <input type="range" min="0" max="3500">
+          </div>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
+        <section>
+          <h3 class="visually-hidden">Результаты поиска</h3>
+          <p>Найдено: 3</p>
+          <div>Сортировка
+            <a href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По рейтингу</a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
         </section>
-      </form>
+
 
       <ul>
         <li>
