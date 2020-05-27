@@ -1,0 +1,67 @@
+:root {
+  --basic-black: #000000;
+  --basic-grey: #333333;
+  --basic-blue: #81b3d2;
+  --basic-light: #f2f2f2;
+  --basic-white: #ffffff;
+}
+
+body {
+  min-width: 1300px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  background-color: var(--basic-light)
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navigation {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.list {
+  list-style: none;
+}
+
+.navigation-link {
+  color: var(--basic-black)
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--basic-blue);
+}
+
+.navigation-link:active {
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.about {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--basic-black)
+}
+
+.social {
+  background-color: var(--basic-blue);
+}
+
+.phone {
+  color: var(--basic-black)
+}
