@@ -1,6 +1,10 @@
 :root {
   --basic-black: #000000;
-  --basic-brown: #766357;
+  --active-black: rgba(0, 0, 0, 0.3);
+  --dark-brown: #503e33;
+  --basic-brown: #604e43;
+  --light-brown: #766357;
+  --active-white: rgba(225, 225, 225, 0.3);
   --basic-grey: #333333;
   --light-grey: #a9a9a9;
   --very-light-grey: #eeeeee;
@@ -8,20 +12,25 @@
   --basic-granit: #ababab;
   --light-granit: #666666;
   --very-light-granit: #cacaca;
-  --basic-blue: #81b3d2;
+  --light-blue: #81b3d2;
+  --basic-blue: #669ec0;
+  --dark-blue: #5496bd;
   --basic-light: #f2f2f2;
+  --dark-light: #ebebeb;
   --basic-white: #ffffff;
 }
 
 body {
-  min-width: 1300px;
   margin: 0;
   padding: 0;
+  min-width: 1200px;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+  text-align: center;
+
   background-color: var(--basic-light)
 }
 
@@ -34,31 +43,148 @@ img {
   height: auto;
 }
 
-.navigation {
-  background-color: var(--basic-white);
-  color: var(--basic-black);
-  line-height: 26px;
-  font-weight: bold;
-}
-
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.navigation-link {
+/* header */
+
+.navigation {
+  background-color: var(--basic-white);
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.text-link {
   color: var(--basic-black)
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
+.text-link:hover,
+.text-link:focus {
   color: var(--basic-blue);
 }
 
-.navigation-link:active {
+.text-link:active {
   color: var(--basic-black);
   mix-blend-mode: normal;
   opacity: 0.3;
 }
+
+/* Главная страница */
+
+.main-tagline {
+  background-color: var(--basic-blue);
+}
+
+.first-heading {
+  line-height: 26px;
+}
+
+.first-description {
+  line-height: 26px;
+}
+
+.heading {
+  font-size: 21px;
+  font-weight: 700;
+
+  color: var(--basic-black)
+}
+
+.description {
+  color: var(--basic-grey);
+}
+
+.main-features {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.interesting {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.interesting-description {
+  line-height: 24px;
+}
+
+.reservation-button {
+  font-family: inherit;
+  text-transform: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+
+  color: var(--basic-white);
+  background-color: var(--light-brown);
+  border: inherit;
+}
+
+.reservation-button:hover,
+.reservation-button:focus {
+  background-color: var(--basic-brown);
+}
+
+.reservation-button:active{
+  background-color: var(--dark-brown);
+  color: var(--active-white);
+}
+
+.main-form {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+
+  background-color: var(--basic-white);
+}
+
+.main-form-text {
+  color: var(--basic-black);
+}
+
+.main-form-field {
+  background-color: var(--basic-light);
+  border: inherit;
+}
+
+.main-form-field:hover,
+.main-form-field:focus {
+  background-color: var(--dark-light);
+}
+
+.main-form-field:active {
+  background-color: var(--basic-white);
+  border: 2px solid var(--super-light-grey);
+  box-sizing: border-box
+}
+
+.information-button {
+  font-family: inherit;
+  text-transform: inherit;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+
+  color: var(--basic-white);
+  background-color: var(--light-blue);
+  border: inherit;
+}
+
+.information-button:hover,
+.information-button:focus {
+  background-color: var(--basic-blue);
+}
+
+.information-button:active {
+  background-color: var(--dark-blue);
+  color: var(--active-white)
+}
+
+/* footer */
 
 .about {
   background-color: rgba(255, 255, 255, 0.9);
@@ -71,4 +197,85 @@ img {
 
 .phone {
   color: var(--basic-black)
+}
+
+/* Страница поиска */
+
+.hotels-search {
+  background-color: var(--basic-white);
+}
+
+.filter {
+  background-color: var(--light-granit);
+  color: var(--basic-white);
+}
+
+.showing-button {
+  font-size: inherit;
+  text-transform: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+
+  background-color: inherit;
+  color: inherit;
+  border: 2px solid var(--basic-white);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.showing-button:hover,
+.showing-button:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.description-filter {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.found {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-link {
+  font-size: 12px;
+  line-height: 18px;
+
+  color: var(--active-black);
+  border: 0;
+  border-bottom:1px dashed var(--light-blue) ;
+}
+
+.sort-link:hover,
+.sort-link:focus {
+  color: var(--light-blue);
+}
+
+.sort-link:active {
+  color: var(--basic-black);
+  border: 0;
+}
+
+.sort-link:visited {
+  color: var(--light-blue);
+  border: 0;
+}
+
+.detailed {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.rating {
+  color: var(--light-granit);
+  background-color: var(--basic-light);
 }

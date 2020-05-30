@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -15,89 +15,92 @@
     <nav class="navigation">
       <a class="logo" href="#"><img src="img/logo.png" width="138" height="70" alt="Логотип города Седона"></a>
       <ul class="list">
-        <li><a class="navigation-link" href="blank.html">Информация</a></li>
-        <li><a class="navigation-link" href="blank.html">Фото и видео</a></li>
-        <li><a class="navigation-link" href="blank.html">Карта штата</a></li>
-        <li><a class="navigation-link" href="hotels.html">Гостиницы</a></li>
+        <li><a class="text-link" href="blank.html">Информация</a></li>
+        <li><a class="text-link" href="blank.html">Фото и видео</a></li>
+        <li><a class="text-link" href="blank.html">Карта штата</a></li>
+        <li><a class="text-link" href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
 
   </header>
 
   <main>
-    <h1 class="visually-hidden">Седона</h1>
-    <img src="img/welcome.png" width="456" height="350" alt="Седона лучше, чем Гранд-Каньон">
+    <section class="main-tagline">
+      <h1 class="visually-hidden">Седона</h1>
+      <img src="img/welcome.png" width="456" height="350" alt="Седона лучше, чем Гранд-Каньон">
+    </section>
 
     <section>
-      <h2>Седона - небольшой городок в Аризоне, <br>
+      <h2 class="heading first-heading">Седона - небольшой городок в Аризоне, <br>
         заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
-      <ol>
+      <p class="description first-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+      <ol class="list">
         <li>
-          <h3>Настоящий городок</h3>
+          <div class="main-features">
+            <h3>Настоящий городок</h3>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="img/№1.jpg" width="800" height="256" alt="Кафе на улице">
-          <ul>
+          </div>
+          <img src="img/№1.jpg" width="800" height="256" alt="Кафе на улице">
+          <ul class="list">
             <li>
-              <img src="img/home.svg" width="75" height="72" alt="Дом">
-              <h4>Жильё</h4>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <h4 class="heading">Жильё</h4>
+              <p class="description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li>
-              <img src="img/food.svg" width="75" height="70" alt="Бургер">
-              <h4>Еда</h4>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <h4 class="heading">Еда</h4>
+              <p class="description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li>
-              <img src="img/souvenirs.svg" width="64" height="77" alt="Подарок">
-              <h4>Сувениры</h4>
-                <p>Не только китайского, но и местного производства!</p>
+              <h4 class="heading">Сувениры</h4>
+              <p class="description">Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </li>
         <li>
-          <h3>Там есть мост дьявола</h3>
+          <div class="main-features">
+            <h3>Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img src="img/№2.jpg" width="800" height="256" alt="Мост дьявола">
+          </div>
+          <img src="img/№2.jpg" width="800" height="256" alt="Мост дьявола">
         </li>
         <li>
-          <h3>Небольшая прощадь</h3>
-            <p>Все достопримечательности находятся очень близко</p>
+          <h3 class="heading">Небольшая площадь</h3>
+          <p class="description">Все достопримечательности находятся очень близко</p>
         </li>
         <li>
-          <h3>Красивая дорога</h3>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <h3 class="heading">Красивая дорога</h3>
+          <p class="description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li>
-          <h3>Мало туристов</h3>
-            <p>Большинство едет в Гранд-Каньон и толпится там</p>
+          <h3 class="heading">Мало туристов</h3>
+          <p class="description">Большинство едет в Гранд-Каньон и толпится там</p>
         </li>
       </ol>
     </section>
 
     <section>
-      <h3>Заинтересовались?</h3>
-      <p>Укажите предполагаемые даты поездки, <br>
+      <h3 class="interesting">Заинтересовались?</h3>
+      <p class="interesting-description">Укажите предполагаемые даты поездки, <br>
         и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button type="button">Поиск гостиницы в Седоне</button>
-      <form action="https://echo.htmlacademy.ru/" method="POST">
-        <label>Дата заезда:
-          <input type="text" name="check-in-date" placeholder="24 апреля 2017">
+      <button type="button" class="reservation-button">Поиск гостиницы в Седоне</button>
+      <form class="main-form" action="https://echo.htmlacademy.ru/" method="POST">
+        <label class="main-form-text">Дата заезда:
+          <input class="main-form-field" type="text" name="check-in-date" placeholder="24 апреля 2017">
         </label>
         <button type="button"><img src="img/calendar.svg" width="21" height="23" alt="Выбрать дату"></button>
-        <label>Дата выезда:
-          <input type="text" name="check-out-date" placeholder="4 июля 2017">
+        <label class="main-form-text">Дата выезда:
+          <input class="main-form-field" type="text" name="check-out-date" placeholder="4 июля 2017">
         </label>
         <button type="button"><img src="img/calendar.svg" width="21" height="23" alt="Выбрать дату"></button>
-        <label for="adult">Взрослые:</label>
-          <button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="Уменьшить количество"></button>
-          <input type="number" name="adult" id="adult" placeholder="2">
-          <button type="button"><img src="img/plus.svg" width="11" height="11" alt="Увеличить количество"></button>
-        <label for="children">Дети:</label>
-          <button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="Уменьшить количество"></button>
-          <input type="number" name="children" id="children" placeholder="0">
-          <button type="button"><img src="img/plus.svg" width="11" height="11" alt="Увеличить количество"></button>
-        <button type="submit">Найти</button>
+        <label class="main-form-text" for="adult">Взрослые:</label>
+        <button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="Уменьшить количество"></button>
+        <input class="main-form-field" type="number" name="adult" id="adult" placeholder="2">
+        <button type="button"><img src="img/plus.svg" width="11" height="11" alt="Увеличить количество"></button>
+        <label class="main-form-text" for="children">Дети:</label>
+        <button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="Уменьшить количество"></button>
+        <input class="main-form-field" type="number" name="children" id="children" placeholder="0">
+        <button type="button"><img src="img/plus.svg" width="11" height="11" alt="Увеличить количество"></button>
+        <button class="information-button" type="submit">Найти</button>
       </form>
     </section>
 
@@ -107,7 +110,7 @@
 
   <footer class="about">
     <p>#Visitsedona</p>
-    <a class="phone" href="tel:+74956660166">тел.+7(495) 666-01-66</a>
+    <a class="text-link" href="tel:+74956660166">тел.+7(495) 666-01-66</a>
 
     <ul class="list">
       <li><a class="social" href="https://twitter.com/">Twitter</a></li>
