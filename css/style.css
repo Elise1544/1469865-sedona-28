@@ -67,9 +67,7 @@ img {
 }
 
 .text-link:active {
-  color: var(--basic-black);
-  mix-blend-mode: normal;
-  opacity: 0.3;
+  color: var(--active-black);
 }
 
 /* Главная страница */
@@ -112,16 +110,17 @@ img {
   line-height: 24px;
 }
 
-.reservation-button {
+.button {
   font-family: inherit;
   text-transform: inherit;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+}
 
+.reservation-button {
   color: var(--basic-white);
   background-color: var(--light-brown);
-  border: inherit;
 }
 
 .reservation-button:hover,
@@ -163,15 +162,8 @@ img {
 }
 
 .information-button {
-  font-family: inherit;
-  text-transform: inherit;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-
   color: var(--basic-white);
   background-color: var(--light-blue);
-  border: inherit;
 }
 
 .information-button:hover,
@@ -251,7 +243,7 @@ img {
 
   color: var(--active-black);
   border: 0;
-  border-bottom:1px dashed var(--light-blue) ;
+  border-bottom: 1px dashed var(--light-blue) ;
 }
 
 .sort-link:hover,
@@ -261,11 +253,6 @@ img {
 
 .sort-link:active {
   color: var(--basic-black);
-  border: 0;
-}
-
-.sort-link:visited {
-  color: var(--light-blue);
   border: 0;
 }
 
