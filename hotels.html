@@ -28,54 +28,68 @@
 
 
   <main class="hotels-search">
-    <h1>Поиск гостиницы</h1>
+    <h1 class="visually-hidden">Поиск гостиницы</h1>
     <section class="filter">
       <h2 class="visually-hidden">Фильтр поиска отелей</h2>
       <form class="filter-form" action="https://echo.htmlacademy.ru/" method="GET">
-        <fieldset class="filter-type" name="infrastructure">
-          <legend class="description-filter">Инфраструктура</legend>
-          <input type="checkbox" name="pool" id="pool" checked disabled>
-          <label for="pool">Бассейн</label>
-          <input type="checkbox" name="parking" id="parking">
-          <label for="parking">Парковка</label>
-          <input type="checkbox" name="wi-fi" id="wi-fi">
-          <label for="wi-fi">Wi-Fi</label>
-        </fieldset>
-        <fieldset class="filter-type" name="housing">
-          <legend class="description-filter">Тип жилья</legend>
-          <input type="checkbox" name="hotel" id="hotel" checked disabled>
-          <label for="hotel">Гостиница</label>
-          <input type="checkbox" name="motel" id="motel" checked>
-          <label for="motel">Мотель</label>
-          <input type="checkbox" name="apartments" id="apartments" checked>
-          <label for="apartments">Апартаменты</label>
-        </fieldset>
-        <fieldset>
-          <legend class="description-filter">Стоимость в сутки</legend>
-          <div class="range-filter">
-            <div class="price-controls">
-              <label class="min-price">От
-                <input type="number" name="min-price" value="0">
-              </label>
-              <label class="max-price">До
-                <input type="number" name="max-price" value="3000">
-              </label>
-            </div>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="toggle toggle-min" tabindex="0"></div>
-              <div class="toggle toggle-max" tabindex="0"></div>
-            </div>
+        <ul class="list"><span class="description-filter">Инфраструктура:</span>
+          <li>
+            <label>Бассейн
+              <input type="checkbox" name="pool" checked disabled>
+            </label>
+          </li>
+          <li>
+            <label>Парковка
+              <input type="checkbox" name="parking">
+            </label>
+          </li>
+          <li>
+            <label>Wi-Fi
+              <input type="checkbox" name="wi-fi">
+            </label>
+          </li>
+        </ul>
+        <ul class="list"><span class="description-filter">Тип жилья:</span>
+          <li>
+            <label>Гостиница
+              <input type="checkbox" name="hotel" checked disabled>
+            </label>
+          </li>
+          <li>
+            <label>Мотель
+              <input type="checkbox" name="motel" checked>
+            </label>
+          </li>
+          <li>
+            <label>Апартаменты
+              <input type="checkbox" name="apartments" checked>
+            </label>
+          </li>
+        </ul>
+        <div class="range-filter">
+          <span class="description-filter">Стоимость в сутки</span>
+          <div class="price-controls">
+            <label class="min-price">От
+              <input type="number" name="min-price" value="0">
+            </label>
+            <label class="max-price">До
+              <input type="number" name="max-price" value="3000">
+            </label>
           </div>
-        </fieldset>
-        <button class="showing-button" type="submit">Показать</button>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0"></div>
+            <div class="toggle toggle-max" tabindex="0"></div>
+          </div>
+          <button class="showing-button" type="submit">Показать</button>
+        </div>
       </form>
     </section>
-    <section class="sorting">
+    <section>
       <h2 class="visually-hidden">Результаты поиска</h2>
-      <p class="found">Найдено: 3</p>
+      <p class="found sort">Найдено: 3</p>
       <div class="sort">Сортировка
         <a class="sort-link" href="#">По цене</a>
         <a class="sort-link" href="#">По типу</a>
@@ -92,8 +106,10 @@
           <img src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara Resort & SPA">
           <div>
             <h3 class="text-link">Amara Resort & SPA</h3>
-            <span>Гостиница</span>
-            <span>От 4000р</span>
+            <div>
+              <span>Гостиница</span>
+              <span>От 4000р</span>
+            </div>
             <a class="button information-button detailed" href="blank.html">Подробнее</a>
             <a class="button reservation-button detailed" href="blank.html">Забронировать</a>
           </div>
@@ -108,8 +124,10 @@
           <img src="img/desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
           <div>
             <h3 class="text-link">Desert Quail Inn</h3>
-            <span>Мотель</span>
-            <span>От 3000р</span>
+            <div>
+              <span>Мотель</span>
+              <span>От 3000р</span>
+            </div>
             <a class="button information-button detailed" href="blank.html">Подробнее</a>
             <a class="button reservation-button detailed" href="blank.html">Забронировать</a>
           </div>
@@ -124,8 +142,10 @@
           <img src="img/villas.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
           <div>
             <h3 class="text-link">Villas at Poco Diablo</h3>
-            <span>Апартаменты</span>
-            <span>От 2000р</span>
+            <div>
+              <span>Апартаменты</span>
+              <span>От 2000р</span>
+            </div>
             <a class="button information-button detailed" href="blank.html">Подробнее</a>
             <a class="button reservation-button detailed" href="blank.html">Забронировать</a>
           </div>
@@ -141,13 +161,15 @@
 
   <footer class="about">
     <div class="contacts">
-    <p>#Visitsedona</p>
-    <a class="text-link" href="tel:+74956660166">тел.+7(495) 666-01-66</a>
+      <p>#Visitsedona</p>
+      <a class="text-link" href="tel:+74956660166">тел.+7(495) 666-01-66</a>
     </div>
     <ul class="list">
       <li><a class="social twitter" href="https://twitter.com/"><span class="visually-hidden">Twitter</span></a></li>
-      <li><a class="social facebook" href="https://www.facebook.com/"><span class="visually-hidden">Facebook</span></a></li>
-      <li><a class="social youtube" href="https://www.youtube.com/"><span class="visually-hidden">Youtube</span></a></li>
+      <li><a class="social facebook" href="https://www.facebook.com/"><span class="visually-hidden">Facebook</span></a>
+      </li>
+      <li><a class="social youtube" href="https://www.youtube.com/"><span class="visually-hidden">Youtube</span></a>
+      </li>
     </ul>
 
     <p>Website by
