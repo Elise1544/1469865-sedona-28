@@ -24,7 +24,8 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding-left: 72px;
+  padding-right: 72px;
   min-width: 1200px;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -34,6 +35,10 @@ body {
   text-align: center;
 
   background-color: var(--basic-light)
+}
+
+.main-body {
+  background-color: var(--basic-white);
 }
 
 a {
@@ -162,6 +167,38 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
 }
 
+.advantages {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+}
+
+.main-advantage {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.real {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.city {
+  display: flex;
+}
+
+.additional-advantages {
+  display: flex;
+}
+
+.bridge {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.visual-advantage {
+  background-color: var(--very-light-grey);
+}
+
 .heading {
   font-size: 21px;
   font-weight: 700;
@@ -212,6 +249,11 @@ input[type="radio"].visually-hidden {
 }
 
 .main-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 568px;
+
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
