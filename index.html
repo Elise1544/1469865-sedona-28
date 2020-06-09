@@ -13,8 +13,8 @@
 <body class="page-body">
   <header class="navigation-section container">
     <nav class="navigation">
-      <a class="logo navigation__logo" href="#"><span class="visually-hidden">На главную страницу</span><img src="img/logo.png"
-          width="138" height="70" alt="Логотип города Седона"></a>
+      <a class="logo navigation__logo" href="#"><span class="visually-hidden">На главную страницу</span><img
+          src="img/logo.png" width="138" height="70" alt="Логотип города Седона"></a>
       <ul class="list main-navigation">
         <li class="main-navigation__item"><a class="text-link" href="blank.html">Информация</a></li>
         <li class="main-navigation__item"><a class="text-link" href="blank.html">Фото и видео</a></li>
@@ -32,10 +32,13 @@
     </section>
 
     <section class="advantages-section container">
-      <h2 class="container heading first-heading">Седона - небольшой городок в Аризоне, <br>
-        заслуживающий большего!</h2>
-      <p class="container description first-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон
-      </p>
+      <div class="advantages-section__heading">
+        <h2 class="container heading first-heading">Седона - небольшой городок в Аризоне, <br>
+          заслуживающий большего!</h2>
+        <p class="container description first-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд
+          Каньон
+        </p>
+      </div>
       <ol class="list advantages">
         <li class="main-advantage real">
           <div class="city">
@@ -65,7 +68,7 @@
             <h3>Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
-          <img src="img/devil's_bridge.jpg" width="800" height="256" alt="Мост дьявола">
+          <img src="img/devils_bridge.jpg" width="800" height="256" alt="Мост дьявола">
         </li>
         <li class="visual-advantage">
           <h3 class="heading">Небольшая площадь</h3>
@@ -83,9 +86,11 @@
     </section>
 
     <section class="interesting container">
-      <h3 class="interesting-header">Заинтересовались?</h3>
-      <p class="interesting-description">Укажите предполагаемые даты поездки, <br>
-        и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <div class="interesting__section">
+        <h3 class="interesting__header">Заинтересовались?</h3>
+        <p class="interesting__description">Укажите предполагаемые даты поездки, <br>
+          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      </div>
       <button type="button" class="button reservation-button">Поиск гостиницы в Седоне</button>
       <form class="main-form" action="https://echo.htmlacademy.ru/" method="POST">
         <fieldset class="dates">
@@ -113,6 +118,9 @@
         <button class="button information-button" type="submit">Найти</button>
       </form>
     </section>
+    <div class="map container">
+      <p class="visually-hidden">Наше местоположение</p>
+    </div>
 
   </main>
 
@@ -124,14 +132,17 @@
       <a class="text-link" href="tel:+74956660166">тел.+7(495) 666-01-66</a>
     </div>
     <ul class="list social">
-      <li class="social__item"><a class="twitter" href="https://twitter.com/"><span class="visually-hidden">Twitter</span></a></li>
-      <li class="social__item"><a class="facebook" href="https://www.facebook.com/"><span class="visually-hidden">Facebook</span></a>
+      <li class="social__item"><a class="twitter" href="https://twitter.com/"><span
+            class="visually-hidden">Twitter</span></a></li>
+      <li class="social__item"><a class="facebook" href="https://www.facebook.com/"><span
+            class="visually-hidden">Facebook</span></a>
       </li>
-      <li class="social__item"><a class="youtube" href="https://www.youtube.com/"><span class="visually-hidden">Youtube</span></a>
+      <li class="social__item"><a class="youtube" href="https://www.youtube.com/"><span
+            class="visually-hidden">Youtube</span></a>
       </li>
     </ul>
 
-    <p>Website by
+    <p class="about__creator">Website by
       <a href="https://htmlacademy.ru/intensive/htmlcss/"><span class="visually-hidden">На сайт
           разработчика</span><img src="img/logo-htmlacademy.png" width="115" height="41" alt="Логотип HTML academy"></a>
     </p>

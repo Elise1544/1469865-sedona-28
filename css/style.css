@@ -169,17 +169,37 @@ input[type="checkbox"].visually-hidden {
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   background-color: var(--footer-white);
   color: var(--basic-black)
 }
 
 .contacts {
+  padding: 0;
   padding-left: 38px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.contacts p,
+.about__creator {
+  margin: 0;
+}
+
+.contacts p {
+  margin-bottom: 9px;
+}
+
+.about__creator {
+  line-height: 26px;
 }
 
 .social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .social__item {
@@ -213,20 +233,31 @@ input[type="checkbox"].visually-hidden {
 /* Главная страница */
 
 .main-tagline {
+  height: 509px;
+  padding-top: 77px;
+  padding-bottom: 80px;
+
   background-color: var(--basic-blue);
 }
 
+.main-tagline img {
+  width: 456px;
+  height: 350px;
+}
+
+.advantages-section__heading {
+  padding-top: 42px;
+  padding-bottom: 51px;
+}
+
 .first-heading {
-  padding-top: 98px;
-  padding-bottom: 16px;
+  margin-bottom: 45px;
 
   text-align: center;
   line-height: 26px;
 }
 
 .first-description {
-  margin-bottom: 51px;
-
   line-height: 26px;
 }
 
@@ -304,15 +335,22 @@ input[type="checkbox"].visually-hidden {
   padding: 47px 51px 54px 52px;
 }
 
-.interesting-header {
-  padding-top: 57px;
+.interesting__section {
+  padding-top: 58px;
+  padding-bottom: 50px;
+}
+
+.interesting__header {
+  margin: 0;
+  margin-bottom: 25px;
 
   font-size: 30px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.interesting-description {
+.interesting__description {
+  margin: 0;
   line-height: 24px;
 }
 
@@ -423,6 +461,14 @@ input[type="checkbox"].visually-hidden {
   padding: 16px 181px;
 }
 
+.map {
+    width: 1199px;
+  height: 594px;
+
+  background-color: var(--light-grey);
+  background-image: url(../img/map.png);
+}
+
 /* Страница поиска */
 
 .filter {
@@ -493,6 +539,7 @@ input[type="checkbox"].visually-hidden {
 
 .price-controls .min-price,
 .price-controls .max-price {
+  display: flex;
   width: 163px;
   height: 36px;
   padding: 7px 49px 8px 52px;
@@ -537,11 +584,10 @@ input[type="checkbox"].visually-hidden {
   font-size: 12px;
   line-height: 18px;
   text-align: left;
-
-  /* background-color: var(--basic-white); */
 }
 
 .sort__header {
+  margin: 0;
   padding: 29px 46px 31px 0;
 
   font-weight: 700;
@@ -554,7 +600,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .sort__link {
-  padding-right: 33px;
+  margin-right: 33px;
 
   font-size: 12px;
   line-height: 18px;
@@ -576,12 +622,13 @@ input[type="checkbox"].visually-hidden {
 
 .hotels-section {
   padding: 0;
-
-  /* background-color: var(--basic-white); */
 }
 
 .hotels img {
-  padding-right: 29px;
+  margin-right: 23px;
+  margin-top: 7px;
+
+  grid-row: 1/5;
 
   width: 135px;
   height: 90px;
@@ -589,29 +636,71 @@ input[type="checkbox"].visually-hidden {
 
 .hotels {
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto 1fr auto;
   padding: 23px 73px 30px 72px;
   text-align: left;
+  column-gap: 6px;
 
   max-width: 1200px;
   width: 100%;
 
-  border: 1px solid var(--super-light-grey)
+  border: none;
+  border-bottom: 1px solid var(--super-light-grey);
 }
 
-.hotels__description .text-link {
+.hotels__name {
   margin-top: 0;
+  margin-bottom: 7px;
+  grid-column: 2/4;
+}
+
+.hotels__type {
+  margin-bottom: 15px;
+  grid-column: 2;
+}
+
+.hotels__cost {
+  margin-bottom: 15px;
+  grid-column: 3;
+}
+
+.hotels__rating {
+  grid-column: 4;
+  grid-row: 1;
+
+  text-align: right;
+}
+
+.hotels__rating__text {
+  padding: 3px 12px 3px 15px;
+  grid-column: 4;
+  grid-row: 3;
+
+  color: var(--light-steel);
+  background-color: var(--basic-light);
+}
+
+.hotels__information-button {
+  margin: 0;
+  grid-column: 2;
+}
+
+.hotels__reservation-button {
+  margin: 0;
+  grid-column: 3;
+  max-width: 142px;
+}
+
+.hotels-section li:first-child {
+  border-top: 1px solid var(--super-light-grey);
 }
 
 .detailed {
+  padding: 3px 16px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
 }
 
-.rating {
-  color: var(--light-steel);
-  background-color: var(--basic-light);
-}
 
