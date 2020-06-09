@@ -382,7 +382,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .main-form {
-  margin: 0 auto;;
+  margin: 0 auto 78px auto;
 
   display: flex;
   flex-wrap: wrap;
@@ -462,7 +462,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .map {
-    width: 1199px;
+  display: none;
+  width: 1199px;
   height: 594px;
 
   background-color: var(--light-grey);
