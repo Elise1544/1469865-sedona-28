@@ -169,7 +169,6 @@ input[type="checkbox"].visually-hidden {
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
   background-color: var(--footer-white);
   color: var(--basic-black)
@@ -194,10 +193,12 @@ input[type="checkbox"].visually-hidden {
 }
 
 .about__creator {
+  margin-top: 15px;
   line-height: 26px;
 }
 
 .social {
+  margin-top: 13px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -658,6 +659,7 @@ input[type="checkbox"].visually-hidden {
 .hotels__type {
   margin-bottom: 15px;
   grid-column: 2;
+  max-width: 200px;
 }
 
 .hotels__cost {
@@ -684,6 +686,7 @@ input[type="checkbox"].visually-hidden {
 .hotels__information-button {
   margin: 0;
   grid-column: 2;
+  max-width: 110px;
 }
 
 .hotels__reservation-button {
