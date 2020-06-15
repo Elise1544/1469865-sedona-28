@@ -33,31 +33,32 @@
 
     <section class="advantages-section container">
       <div class="advantages-section__heading">
-        <h2 class="container heading first-heading">Седона - небольшой городок в Аризоне, <br>
+        <h2 class="container heading first-heading">Седона — небольшой городок в Аризоне, <br>
           заслуживающий большего!</h2>
         <p class="container description first-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд
-          Каньон
+          Каньон!
         </p>
       </div>
       <ol class="list advantages">
         <li class="main-advantage real">
           <div class="city">
             <div class="main-features">
-              <h3>Настоящий городок</h3>
-              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <h3 class="heading">Настоящий<br>городок</h3>
+              <span class="advantages__number">— №1 —</span>
+              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img src="img/real_city.jpg" width="800" height="256" alt="Кафе на улице">
           </div>
           <ul class="additional-advantages list">
-            <li>
+            <li class="additional-advantages__item housing">
               <h4 class="heading">Жильё</h4>
               <p class="description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li>
+            <li class="additional-advantages__item food">
               <h4 class="heading">Еда</h4>
               <p class="description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li>
+            <li class="additional-advantages__item souvenirs">
               <h4 class="heading">Сувениры</h4>
               <p class="description">Не только китайского, но и местного производства!</p>
             </li>
@@ -65,22 +66,26 @@
         </li>
         <li class="bridge main-advantage">
           <div class="main-features">
-            <h3>Там есть мост дьявола</h3>
+            <h3 class="heading">Там есть<br>мост дьявола</h3>
+            <span class="advantages__number">— №2 —</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
           <img src="img/devils_bridge.jpg" width="800" height="256" alt="Мост дьявола">
         </li>
         <li class="visual-advantage">
-          <h3 class="heading">Небольшая площадь</h3>
+          <h3 class="heading">Небольшая<br>площадь</h3>
+          <span class="advantages__number">— №3 —</span>
           <p class="description">Все достопримечательности находятся очень близко</p>
         </li>
         <li class="visual-advantage">
-          <h3 class="heading">Красивая дорога</h3>
+          <h3 class="heading">Красивая<br>дорога</h3>
+          <span class="advantages__number">— №4 —</span>
           <p class="description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li class="visual-advantage">
-          <h3 class="heading">Мало туристов</h3>
-          <p class="description">Большинство едет в Гранд-Каньон и толпится там</p>
+          <h3 class="heading">Мало<br>туристов</h3>
+          <span class="advantages__number">— №5 —</span>
+          <p class="description">Большинство едет в Гранд-Каньон<br>и толпится там</p>
         </li>
       </ol>
     </section>
@@ -90,37 +95,50 @@
         <h3 class="interesting__header">Заинтересовались?</h3>
         <p class="interesting__description">Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button type="button" class="button reservation-button">Поиск гостиницы в
+          Седоне</button>
       </div>
-      <button type="button" class="button reservation-button">Поиск гостиницы в Седоне</button>
       <form class="main-form" action="https://echo.htmlacademy.ru/" method="POST">
         <fieldset class="dates">
           <legend class="visually-hidden">Укажите даты проживания</legend>
-          <label class="main-form-text">Дата заезда:
-            <input class="main-form-field" type="text" name="check-in-date" placeholder="24 апреля 2017">
-          </label>
-          <button type="button"><img src="img/calendar.svg" width="21" height="23" alt="Выбрать дату"></button>
-          <label class="main-form-text">Дата выезда:
-            <input class="main-form-field" type="text" name="check-out-date" placeholder="4 июля 2017">
-          </label>
-          <button type="button"><img src="img/calendar.svg" width="21" height="23" alt="Выбрать дату"></button>
+          <div class="main-form__check-in-date">
+            <label class="main-form-text">Дата заезда:
+              <input class="main-form-field" type="text" name="check-in-date" value="24 апреля 2017">
+            </label>
+            <button class="main-form__calendar" type="button"><span class="visually-hidden">Выбрать дату</span>
+              </button>
+          </div>
+          <div class="main-form__check-out-date">
+            <label class="main-form-text">Дата выезда:
+              <input class="main-form-field" type="text" name="check-out-date" value="4 июля 2017">
+            </label>
+            <button class="main-form__calendar" type="button"><span class="visually-hidden">Выбрать дату</span></button>
+          </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="main-form__people">
           <legend class="people visually-hidden">Укажите количество проживающих</legend>
-          <label class="main-form-text" for="adult">Взрослые:</label>
-          <button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="Уменьшить количество"></button>
-          <input class="main-form-field" type="number" name="adult" id="adult" placeholder="2">
-          <button type="button"><img src="img/plus.svg" width="11" height="11" alt="Увеличить количество"></button>
-          <label class="main-form-text" for="children">Дети:</label>
-          <button type="button"><img src="img/rectangle.svg" width="12" height="3" alt="Уменьшить количество"></button>
-          <input class="main-form-field" type="number" name="children" id="children" placeholder="0">
-          <button type="button"><img src="img/plus.svg" width="11" height="11" alt="Увеличить количество"></button>
+          <div class="main-form__adult">
+            <label class="main-form-text" for="adult">Взрослые:</label>
+            <button class="main-form__minus" type="button">
+              <span class="visually-hidden">Уменьшить количество</span></button>
+            <input class="main-form-field" type="number" name="adult" id="adult" value="2">
+            <button class="main-form__plus" type="button">
+              <span class="visually-hidden">Увеличить количество</span>
+              </button>
+          </div>
+          <div class="main-form__children">
+            <label class="main-form-text" for="children">Дети:</label>
+            <button class="main-form__minus" type="button"><span class="visually-hidden">Уменьшить количество</span></button>
+            <input class="main-form-field" type="number" name="children" id="children" value="0">
+            <button class="main-form__plus" type="button"><span class="visually-hidden">Увеличить количество</span></button>
+          </div>
         </fieldset>
         <button class="button information-button" type="submit">Найти</button>
+        <div class="map">
+          <p class="visually-hidden">Наше местоположение</p>
+        </div>
       </form>
     </section>
-    <div class="map container">
-      <p class="visually-hidden">Наше местоположение</p>
-    </div>
 
   </main>
 
@@ -129,24 +147,25 @@
   <footer class="container about">
     <div class="contacts">
       <p>#Visitsedona</p>
-      <a class="text-link" href="tel:+74956660166">тел.+7(495) 666-01-66</a>
+      <a class="text-link" href="tel:+74956660166">тел: +7(495) 666-01-66</a>
     </div>
     <ul class="list social">
-      <li class="social__item"><a class="twitter" href="https://twitter.com/"><span
-            class="visually-hidden">Twitter</span></a></li>
-      <li class="social__item"><a class="facebook" href="https://www.facebook.com/"><span
+      <li class="social__item twitter"><a href="https://twitter.com/">
+        <span class="visually-hidden">Twitter</span>
+      </a>
+      </li>
+      <li class="social__item facebook"><a href="https://www.facebook.com/"><span
             class="visually-hidden">Facebook</span></a>
       </li>
-      <li class="social__item"><a class="youtube" href="https://www.youtube.com/"><span
+      <li class="social__item youtube"><a href="https://www.youtube.com/"><span
             class="visually-hidden">Youtube</span></a>
       </li>
     </ul>
-
-    <p class="about__creator">Website by
+    <div class="about__creator">
+      <p class="copyright">Website by</p>
       <a href="https://htmlacademy.ru/intensive/htmlcss/"><span class="visually-hidden">На сайт
-          разработчика</span><img src="img/logo-htmlacademy.png" width="115" height="41" alt="Логотип HTML academy"></a>
-    </p>
-
+          разработчика</span><img class="copyright-link" src="img/logo-htmlacademy.png" width="115" height="41" alt="Логотип HTML academy"></a>
+    </div>
   </footer>
 </body>
 
