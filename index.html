@@ -98,73 +98,82 @@
         <button type="button" class="button reservation-button">Поиск гостиницы в
           Седоне</button>
       </div>
+    </section>
+    <div class="map container">
+      <p class="visually-hidden">Наше местоположение</p>
       <form class="main-form" action="https://echo.htmlacademy.ru/" method="POST">
-        <fieldset class="dates">
+        <fieldset class="main-form__dates">
           <legend class="visually-hidden">Укажите даты проживания</legend>
-          <div class="main-form__check-in-date">
-            <label class="main-form-text">Дата заезда:
-              <input class="main-form-field" type="text" name="check-in-date" value="24 апреля 2017">
-            </label>
-            <button class="main-form__calendar" type="button"><span class="visually-hidden">Выбрать дату</span>
-              </button>
+          <div>
+            <label class="main-form-text" for="check-in-date">Дата заезда:</label>
+            <div class="main-form__check-in-date">
+              <input class="main-form-field" type="text" name="check-in-date" id="check-in-date" value="24 апреля 2017">
+              <button class="main-form__calendar" type="button"><span class="visually-hidden">Выбрать
+                  дату</span></button>
+            </div>
           </div>
-          <div class="main-form__check-out-date">
-            <label class="main-form-text">Дата выезда:
-              <input class="main-form-field" type="text" name="check-out-date" value="4 июля 2017">
-            </label>
-            <button class="main-form__calendar" type="button"><span class="visually-hidden">Выбрать дату</span></button>
+          <div>
+            <label class="main-form-text" for="check-out-date">Дата выезда:</label>
+            <div class="main-form__check-out-date">
+              <input class="main-form-field" type="text" name="check-out-date" id="check-out-date" value="4 июля 2017">
+              <button class="main-form__calendar" type="button"><span class="visually-hidden">Выбрать
+                  дату</span></button>
+            </div>
           </div>
         </fieldset>
         <fieldset class="main-form__people">
           <legend class="people visually-hidden">Укажите количество проживающих</legend>
           <div class="main-form__adult">
             <label class="main-form-text" for="adult">Взрослые:</label>
-            <button class="main-form__minus" type="button">
-              <span class="visually-hidden">Уменьшить количество</span></button>
-            <input class="main-form-field" type="number" name="adult" id="adult" value="2">
-            <button class="main-form__plus" type="button">
-              <span class="visually-hidden">Увеличить количество</span>
+            <div class="main-form__input">
+              <button class="main-form__minus" type="button">
+                <span class="visually-hidden">Уменьшить количество</span></button>
+              <input class="main-form-field" type="number" name="adult" id="adult" value="2">
+              <button class="main-form__plus" type="button">
+                <span class="visually-hidden">Увеличить количество</span>
               </button>
+            </div>
           </div>
           <div class="main-form__children">
             <label class="main-form-text" for="children">Дети:</label>
-            <button class="main-form__minus" type="button"><span class="visually-hidden">Уменьшить количество</span></button>
-            <input class="main-form-field" type="number" name="children" id="children" value="0">
-            <button class="main-form__plus" type="button"><span class="visually-hidden">Увеличить количество</span></button>
+            <div class="main-form__input">
+              <button class="main-form__minus" type="button"><span class="visually-hidden">Уменьшить
+                  количество</span></button>
+              <input class="main-form-field" type="number" name="children" id="children" value="0">
+              <button class="main-form__plus" type="button"><span class="visually-hidden">Увеличить
+                  количество</span></button>
+            </div>
           </div>
         </fieldset>
         <button class="button information-button" type="submit">Найти</button>
-        <div class="map">
-          <p class="visually-hidden">Наше местоположение</p>
-        </div>
       </form>
-    </section>
-
+    </div>
   </main>
 
 
 
-  <footer class="container about">
+  <footer class="footer-main container about">
     <div class="contacts">
       <p>#Visitsedona</p>
       <a class="text-link" href="tel:+74956660166">тел: +7(495) 666-01-66</a>
     </div>
     <ul class="list social">
-      <li class="social__item twitter"><a href="https://twitter.com/">
-        <span class="visually-hidden">Twitter</span>
-      </a>
+      <li><a class="social__item twitter" href="https://twitter.com/">
+          <span class="visually-hidden">Twitter</span>
+        </a>
       </li>
-      <li class="social__item facebook"><a href="https://www.facebook.com/"><span
+      <li><a class="social__item facebook" href="https://www.facebook.com/"><span
             class="visually-hidden">Facebook</span></a>
       </li>
-      <li class="social__item youtube"><a href="https://www.youtube.com/"><span
+      <li><a class="social__item youtube" href="https://www.youtube.com/"><span
             class="visually-hidden">Youtube</span></a>
       </li>
     </ul>
     <div class="about__creator">
       <p class="copyright">Website by</p>
       <a href="https://htmlacademy.ru/intensive/htmlcss/"><span class="visually-hidden">На сайт
-          разработчика</span><img class="copyright-link" src="img/logo-htmlacademy.png" width="115" height="41" alt="Логотип HTML academy"></a>
+          разработчика</span><img class="copyright-link" src="img/logo-htmlacademy.png" width="115" height="41"
+          alt="Логотип HTML academy"></a>
     </div>
   </footer>
 </body>

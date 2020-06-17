@@ -18,7 +18,7 @@
         <li class="main-navigation__item"><a class="text-link" href="blank.html">Информация</a></li>
         <li class="main-navigation__item"><a class="text-link" href="blank.html">Фото и видео</a></li>
         <li class="main-navigation__item"><a class="text-link" href="blank.html">Карта штата</a></li>
-        <li class="main-navigation__item"><a class="text-link text-link--active" href="#">Гостиницы</a></li>
+        <li class="main-navigation__item"><a class="text-link text-link--active">Гостиницы</a></li>
       </ul>
     </nav>
 
@@ -36,7 +36,7 @@
           <ul class="list filter-form__list">
             <li class="filter-form-list__item">
               <label>Бассейн
-                <input class="checkbox filter-form__checkbox" type="checkbox" name="pool" checked>
+                <input class="checkbox filter-form__checkbox" type="checkbox" name="pool" checked disabled>
               </label>
             </li>
             <li class="filter-form-list__item">
@@ -85,8 +85,8 @@
             <div class="scale">
               <div class="bar"></div>
             </div>
-            <div class="toggle toggle-min" tabindex="0"></div>
-            <div class="toggle toggle-max" tabindex="0"></div>
+            <button type="button" class="toggle toggle-min"></button>
+            <button type="button" class="toggle toggle-max"></button>
           </div>
           <button class="button showing-button" type="submit">Показать</button>
         </div>
@@ -116,13 +116,7 @@
           <span class="hotels__cost">От 4000р.</span>
           <a class="hotels__information-button button information-button detailed" href="blank.html">Подробнее</a>
           <a class="hotels__reservation-button button reservation-button detailed" href="blank.html">Забронировать</a>
-          <div class="hotels__rating">
-            <ul>
-              <li class="list star"></li>
-              <li class="list star"></li>
-              <li class="list star"></li>
-              <li class="list star"></li>
-            </ul>
+          <div class="hotels__rating hotels__rating-first">
           </div>
           <span class="hotels__rating__text">Рейтинг 8,5</span>
         </article>
@@ -135,13 +129,7 @@
           <span class="hotels__cost">От 3000р.</span>
           <a class="hotels__information-button button information-button detailed" href="blank.html">Подробнее</a>
           <a class="hotels__reservation-button button reservation-button detailed" href="blank.html">Забронировать</a>
-          <div class="hotels__rating">
-            <ul>
-              <li class="list star"></li>
-              <li class="list star"></li>
-              <li class="list star"></li>
-            </ul>
-          </div>
+          <div class="hotels__rating hotels__rating-second"></div>
           <span class="hotels__rating__text">Рейтинг 8,9</span>
         </article>
       </li>
@@ -153,12 +141,7 @@
           <span class="hotels__cost">От 2000р.</span>
           <a class="hotels__information-button button information-button detailed" href="blank.html">Подробнее</a>
           <a class="hotels__reservation-button button reservation-button detailed" href="blank.html">Забронировать</a>
-          <div class="hotels__rating">
-            <ul>
-              <li class="list star"></li>
-              <li class="list star"></li>
-            </ul>
-          </div>
+          <div class="hotels__rating hotels__rating-third"></div>
           <span class="hotels__rating__text">Рейтинг 9,2</span>
         </article>
       </li>
@@ -172,12 +155,12 @@
       <a class="text-link" href="tel:+74956660166">тел: +7(495) 666-01-66</a>
     </div>
     <ul class="list social">
-      <li class="social__item twitter"><a href="https://twitter.com/"><span class="visually-hidden">Twitter</span></a>
+      <li><a class="social__item twitter" href="https://twitter.com/"><span class="visually-hidden">Twitter</span></a>
       </li>
-      <li class="social__item facebook"><a href="https://www.facebook.com/"><span
+      <li><a class="social__item facebook" href="https://www.facebook.com/"><span
             class="visually-hidden">Facebook</span></a>
       </li>
-      <li class="social__item youtube"><a href="https://www.youtube.com/"><span
+      <li><a class="social__item youtube" href="https://www.youtube.com/"><span
             class="visually-hidden">Youtube</span></a>
       </li>
     </ul>
