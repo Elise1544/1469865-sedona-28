@@ -100,6 +100,12 @@ input[type="checkbox"].visually-hidden {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 /* Grid */
@@ -156,6 +162,7 @@ input::-webkit-inner-spin-button {
   width: 227px;
 
   text-align: left;
+  vertical-align: baseline;
 }
 
 .main-navigation__item:nth-child(4n+4) {
@@ -541,14 +548,9 @@ input::-webkit-inner-spin-button {
   box-shadow: 0px 7px 15px var(--shadow);
 }
 
-.modal-show {
-  display: none;
-}
-
 .main-form input::placeholder {
   color: var(--basic-black);
   font-weight: 700;
-  line-height: 26px;
 }
 
 .main-form__block {
@@ -603,11 +605,13 @@ input::-webkit-inner-spin-button {
 
 .main-form__check-in-date {
   display: inline-block;
+  vertical-align: baseline;
   position: relative;
 }
 
 .main-form__check-out-date {
   display: inline-block;
+  vertical-align: baseline;
   position: relative;
 }
 
@@ -721,6 +725,7 @@ input::-webkit-inner-spin-button {
 
 .map {
   padding: 0;
+  background-color: var(--light-grey);
   background-image: url(../img/map.png);
   width: 1200px;
   height: 594px;
@@ -915,7 +920,8 @@ input::-webkit-inner-spin-button {
 }
 
 .price-controls__input {
-  width: 72px;
+  margin-left: 3px;
+  width: 69px;
   background-color: transparent;
   border: none;
   color: var(--basic-white);
@@ -1140,4 +1146,48 @@ input::-webkit-inner-spin-button {
   line-height: 21px;
 }
 
+/* Анимация */
 
+.modal-show {
+  display: none;
+}
+
+.main-form {
+  animation: bounce 0.7s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-86px);
+  }
+
+  60% {
+    transform: translateY(0);
+  }
+
+  85% {
+    transform: translateY(-25px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}

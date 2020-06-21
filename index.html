@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-min.css">
 </head>
 
 <body class="page-body">
@@ -102,7 +102,7 @@
             <div class="main-form__block">
               <label class="main-form-text" for="check-in-date">Дата заезда:</label>
               <div class="main-form__check-in-date">
-                <input class="main-form-field" type="text" name="check-in-date" id="check-in-date" required
+                <input class="main-form-field check-in" type="text" name="check-in-date" id="check-in-date"
                   placeholder="24 апреля 2017">
                 <button class="main-form__calendar" type="button"><span class="visually-hidden">Выбрать
                     дату</span></button>
@@ -111,7 +111,7 @@
             <div class="main-form__block">
               <label class="main-form-text" for="check-out-date">Дата выезда:</label>
               <div class="main-form__check-out-date">
-                <input class="main-form-field" type="text" name="check-out-date" id="check-out-date"
+                <input class="main-form-field check-out-date" type="text" name="check-out-date" id="check-out-date"
                   placeholder="4 июля 2017">
                 <button class="main-form__calendar" type="button"><span class="visually-hidden">Выбрать
                     дату</span></button>
@@ -126,7 +126,7 @@
                 <div class="main-form__input">
                   <button class="main-form__change-number main-form__minus" type="button">
                     <span class="visually-hidden">Уменьшить количество</span></button>
-                  <input class="main-form-field" type="number" name="adult" id="adult" required placeholder="2">
+                  <input class="main-form-field adult" type="number" name="adult" id="adult" placeholder="2" min="0">
                   <button class="main-form__change-number main-form__plus" type="button">
                     <span class="visually-hidden">Увеличить количество</span>
                   </button>
@@ -138,7 +138,7 @@
                   <button class="main-form__change-number main-form__minus" type="button"><span
                       class="visually-hidden">Уменьшить
                       количество</span></button>
-                  <input class="main-form-field" type="number" name="children" id="children" placeholder="0">
+                  <input class="main-form-field" type="number" name="children" id="children" placeholder="0" min="0">
                   <button class="main-form__change-number main-form__plus" type="button"><span
                       class="visually-hidden">Увеличить
                       количество</span></button>
@@ -192,7 +192,7 @@
           alt="Логотип HTML academy"></a>
     </div>
   </footer>
-  <script src="js/sedona.js"></script>
+  <script src="js/script-min.js"></script>
 </body>
 
 </html>
