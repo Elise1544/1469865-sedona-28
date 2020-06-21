@@ -97,13 +97,13 @@ input[type="checkbox"].visually-hidden {
   cursor: pointer;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.number::-webkit-outer-spin-button,
+.number::-webkit-inner-spin-button {
     -webkit-appearance: none;
     appearance: none;
 }
 
-input[type='number'] {
+.number {
   -moz-appearance: textfield;
   appearance: textfield;
 }
