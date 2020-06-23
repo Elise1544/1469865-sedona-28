@@ -1,6 +1,7 @@
 :root {
   --basic-black: #000000;
   --active-black: rgba(0, 0, 0, 0.3);
+  --footer-black: #231f20;
   --dark-brown: #503e33;
   --basic-brown: #604e43;
   --light-brown: #766357;
@@ -249,18 +250,22 @@ input[type="checkbox"].visually-hidden {
   height: 64px;
 }
 
+.about__creator svg {
+  fill: var(--footer-black);
+}
+
+.about__creator svg:hover,
+.about__creator svg:focus {
+  fill: var(--light-blue);
+}
+
+.about__creator svg:active {
+  fill: var(--active-black);
+}
+
 .copyright {
   margin: 0;
   margin-right: 8px;
-}
-
-.copyright-link:hover,
-.copyright-link:focus {
-  content: url(../img/logo-htmlacademy-focus.svg);
-}
-
-.copyright-link:active {
-  content: url(../img/logo-htmlacademy-active.svg);
 }
 
 .social {
